@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context=".views.mainActivity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/headerlayoutInclude"
+            layout="@layout/header_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/headerlayoutInclude"
+            android:layout_marginTop="11dp"
+            app:seriesType="bar"
+            tools:visibility="visible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/CurrensiesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/lineChart"
+            android:layout_marginTop="7dp"
+            android:nestedScrollingEnabled="false" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LoadingDataLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/White"
+        tools:visibility="gone">
+
+        <TextView
+            android:id="@+id/LoadingTextView"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="104dp"
+            android:layout_marginEnd="110dp"
+            android:layout_marginBottom="315dp"
+            android:gravity="center"
+            android:text="@string/loadingDta"
+            android:textStyle="bold" />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/LoadingProgressBar"
+            style="@style/AVLoadingIndicatorView"
+            android:layout_width="142dp"
+            android:layout_height="124dp"
+            android:layout_above="@+id/LoadingTextView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="130dp"
+            android:layout_marginEnd="139dp"
+            android:layout_marginBottom="3dp"
+            app:indicatorColor="@color/blue"
+            app:indicatorName="BallTrianglePathIndicator"
+            tools:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/NetworkStateLayout"
+        android:layout_width="409dp"
+        android:layout_height="99dp"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/White"
+        tools:visibility="invisible">
+
+        <TextView
+            android:id="@+id/NetworkIsNotAvilableTextView"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="85dp"
+            android:gravity="center"
+            android:text="@string/networkIsNotAvailable" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginBottom="21dp"
+            android:gravity="center"
+            android:text="@string/retryingConnection"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+# Referenced at /Users/moeidheidari/Downloads/RevolutTestApplication/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:14
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at /Users/moeidheidari/Downloads/RevolutTestApplication/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:14
+-keep class com.example.revoluttestapplication.App { <init>(); }

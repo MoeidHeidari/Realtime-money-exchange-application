@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/Currency_Converter_EditText_Item"
+        android:layout_width="152dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="45dp"
+
+        android:autofillHints="@string/zero"
+        android:background="@drawable/light_gray_round_rect"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/zero"
+        android:inputType="numberDecimal"
+        android:maxLength="7"
+        android:selectAllOnFocus="true"
+        android:text="@string/zero"
+        android:textColor="@color/blue"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/Currency_Converter_RateTextView_Item"
+        android:layout_width="83dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/Currency_Converter_EditText_Item"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="41dp"
+        android:layout_toStartOf="@+id/Currency_Converter_EditText_Item"
+        android:textColor="@color/blue"
+        android:textSize="14sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="7dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="2dp">
+
+        <ImageView
+            android:id="@+id/currensies_list_item_flag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/flagimage"
+            android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

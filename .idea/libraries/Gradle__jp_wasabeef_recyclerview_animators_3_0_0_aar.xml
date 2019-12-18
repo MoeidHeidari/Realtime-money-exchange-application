@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: jp.wasabeef:recyclerview-animators:3.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5abc0a7a4dada151cd3e60b04b1354e4/recyclerview-animators-3.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5abc0a7a4dada151cd3e60b04b1354e4/recyclerview-animators-3.0.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jp.wasabeef/recyclerview-animators/3.0.0/19fa46543c24f1fa26c5c62ceab5b77e17fa79a3/recyclerview-animators-3.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jp.wasabeef/recyclerview-animators/3.0.0/feb4fc9350399013eafe64e6aac37b56103d02f5/recyclerview-animators-3.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,69 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.revoluttestapplication"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:5:5-66
+11-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:6:5-78
+12-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:6:22-76
+13
+14    <application
+14-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:8:5-31:19
+15        android:name="com.example.revoluttestapplication.App"
+15-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:9:9-28
+16        android:allowBackup="true"
+16-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:10:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.2.0-rc01] /Users/moeidheidari/.gradle/caches/transforms-2/files-2.1/aef0c49dea5e7376e49032965d878ffb/core-1.2.0-rc01/AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:11:9-43
+20        android:label="@string/app_name"
+20-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:12:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:13:9-54
+22        android:supportsRtl="true"
+22-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:14:9-35
+23        android:theme="@style/AppTheme" >
+23-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:15:9-40
+24        <activity android:name="com.example.revoluttestapplication.views.mainActivity.MainActivity" >
+24-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:16:9-22:20
+24-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:16:19-66
+25            <intent-filter>
+25-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:17:13-21:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:18:17-69
+26-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:18:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:20:17-77
+28-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:20:27-74
+29            </intent-filter>
+30        </activity>
+31
+32        <receiver android:name="com.example.revoluttestapplication.receivers.NetworkStateReceiver" >
+32-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:23:9-28:20
+32-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:23:19-65
+33            <intent-filter>
+33-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:24:13-27:29
+34                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+34-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:25:17-79
+34-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:25:25-76
+35                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+35-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:26:17-78
+35-->/Users/moeidheidari/Downloads/RevolutTestApplication/app/src/main/AndroidManifest.xml:26:25-75
+36            </intent-filter>
+37        </receiver>
+38    </application>
+39
+40</manifest>

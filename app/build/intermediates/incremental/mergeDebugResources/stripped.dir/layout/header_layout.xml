@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="87dp"
+        android:layout_height="37dp"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@+id/headerUpdateText"
+        android:contentDescription="@string/logo"
+        app:srcCompat="@drawable/revolute_logo" />
+
+    <com.github.angads25.toggle.widget.LabeledSwitch
+        android:id="@+id/livedataSwitch"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:textSize="14sp"
+        app:colorBorder="@color/blue"
+        app:on="true"
+
+        app:textOff="not live"
+        app:textOn="live" />
+
+    <LinearLayout
+        android:id="@+id/headerUpdateText"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lastUpdate"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/LastUpdateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/defaultTime"
+            android:textSize="12sp" />
+    </LinearLayout>
+</RelativeLayout>

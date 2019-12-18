@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RevolutTestApplication</string>
+    <string name="error">an error has occurred</string>
+    <string name="zero">0.0</string>
+    <string name="networkIsNotAvailable">oops! \n network is not available</string>
+    <string name="retryingConnection">looking for a connection... :)</string>
+    <string name="loadingDta">loading data \n \n please wait...</string>
+    <string name="lastUpdate">last update</string>
+    <string name="defaultTime">00:00:00</string>
+    <string name="HTTP_UNAUTHORIZED">(HTTP_UNAUTHORIZED) error has occurred</string>
+    <string name="HTTP_FORBIDDEN">(HTTP_FORBIDDEN) error has occurred</string>
+    <string name="HTTP_INTERNAL_ERROR">(HTTP_INTERNAL_ERROR) error has occurred</string>
+    <string name="HTTP_NOT_FOUND">(HTTP_NOT_FOUND) error has occurred</string>
+    <string name="inputer">inputer</string>
+    <string name="logo">logoImage</string>
+    <string name="flagimage">flagImage</string>
+
+</resources>

@@ -1,0 +1,7 @@
+#Wed Dec 18 04:46:37 MSK 2019
+base.0=/Users/moeidheidari/Downloads/RevolutTestApplication/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/Users/moeidheidari/Downloads/RevolutTestApplication/app/build/intermediates/dex/debug/mergeDexDebug/out/classes2.dex
